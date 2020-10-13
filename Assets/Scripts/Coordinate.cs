@@ -17,12 +17,6 @@ public class Coordinate {
 	public override bool Equals(object coordinate)
 	{
 		Coordinate item = coordinate as Coordinate;
-
-		if (item == null)
-		{
-			return false;
-		}
-
-		return ( item.x == x & item.y == y);
+        return (item == null) ? false:( item.x == x & item.y == y);
 	}
 }
